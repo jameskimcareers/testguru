@@ -40,7 +40,9 @@ namespace TestGuru.Controllers
             // Do nothing
             string dummyVariable;
 
-            blatant error;
+            blatant error
+
+                morefisdngoipjgpiosdjgfpdo
         }
     }
 }
