@@ -21,7 +21,7 @@ namespace TestGuru.Controllers
         public WeatherForecastController(ILogger<WeatherForecastController> logger) { _logger = logger; }
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public async Task<IEnumerable<WeatherForecast>> Get()
         {
             var rng = new Random();
 
@@ -33,6 +33,14 @@ namespace TestGuru.Controllers
                         Summary = Summaries[rng.Next(Summaries.Length)]
                     })
                 .ToArray();
+        }
+
+        private async Task DoNothing(string arg1, string b, string c3, int whynot)
+        {
+            // Do nothing
+            string dummyVariable;
+
+            blatant error;
         }
     }
 }
